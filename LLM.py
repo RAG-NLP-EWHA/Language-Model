@@ -6,7 +6,7 @@ from openai import OpenAI # OpenAI 라이브러리 추가
 
 # --- 설정 변수 (Configuration Variables) ---
 # NOTE: OpenAI API Key는 환경 변수 'OPENAI_API_KEY'에 설정되어 있어야 합니다.
-BASE_DIR = "/mnt/aix23604/"
+BASE_DIR = "/aix23604/"
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 DATASET_PATH = os.path.join(BASE_DIR, "hotpotqa_val_700_question.csv")
 
