@@ -37,6 +37,18 @@ cp .env.example .env
 
 ## Quick Start
 
+### Quick Demo
+
+Run the quickstart script to see both models in action:
+
+```bash
+python quickstart.py
+```
+
+This will demonstrate:
+- sLM (small language model) running locally
+- GPT-4.1 text generation (if API key is configured)
+
 ### Using GPT-4.1
 
 ```python
@@ -80,12 +92,16 @@ print(response)
 
 The repository includes several example scripts:
 
+- `quickstart.py`: Quick demo of both GPT-4 and sLM
 - `example_gpt4.py`: Demonstrates GPT-4.1 usage for text generation and chat
 - `example_slm.py`: Shows how to use small language models locally
 - `example_comparison.py`: Compares outputs from GPT-4 and sLM
 
 Run examples:
 ```bash
+# Quick demo (recommended to start)
+python quickstart.py
+
 # GPT-4 examples (requires API key)
 python example_gpt4.py
 
@@ -101,9 +117,11 @@ python example_comparison.py
 ```
 Language-Model/
 ├── language_model.py      # Core language model classes
+├── quickstart.py         # Quick demo script
 ├── example_gpt4.py       # GPT-4 usage examples
 ├── example_slm.py        # sLM usage examples
 ├── example_comparison.py # Model comparison
+├── test_implementation.py # Test suite
 ├── requirements.txt      # Python dependencies
 ├── .env.example         # Environment configuration template
 ├── .gitignore          # Git ignore rules
