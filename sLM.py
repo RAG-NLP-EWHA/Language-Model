@@ -9,7 +9,7 @@ from sentence_transformers import SentenceTransformer
 from datasets import load_from_disk
 from tqdm.auto import tqdm
 
-BASE_DIR = "/mnt/aix23604/"
+BASE_DIR = "/aix23604/"
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
 HF_TOKEN = os.environ.get("HF_TOKEN", None)
 
